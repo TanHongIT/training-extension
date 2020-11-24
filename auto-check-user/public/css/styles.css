@@ -1,12 +1,12 @@
 header h3{
-	float: left; margin-left: 32%;
+	text-align: center;
 }
 header #go-to-options{
 	float: right;
 }
 .container{
   padding-bottom: 0.5em;
-  width: 450px;
+  width: 300px;
   border-radius: 5px;
 }
 .input-group-text{
