@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Check presence student",
-    "description": "Điểm danh Sinh Viên",
+    "description": "Sinh Viên Điểm danh",
     "version": "1.0",
     "permissions": ["http://localhost/*", "https://localhost/*"],
     "content_scripts": [{
