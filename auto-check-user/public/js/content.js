@@ -27,19 +27,21 @@ $(document).ready(function () {
         // console.log($('#mssv_user2').val());
         
         var get_input_mssv;
+        
         var total_user_mssv = $('#total_user_mssv').val();
         console.log(total_user_mssv);
 
-        for (var i = 1; i <= total_user_mssv; i++) {
-            get_input_mssv = $('#mssv_user' + i).val();
-            chrome.storage.sync.get(["list"], function (result) {
+        //save list mssv from server file to chrome storage
+        chrome.storage.sync.get(["list"], function (result) {
+            for (var i = 1; i <= total_user_mssv; i++) {
+                get_input_mssv = $('#mssv_user' + i).val();
                 var get_list = result['list'];
                 get_list['mssv'].push(get_input_mssv);
                 chrome.storage.sync.set({
                     "list": get_list
                 });
-            });
-        }
+            }
+        });
 
     });
 });
