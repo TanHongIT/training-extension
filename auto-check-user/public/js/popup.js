@@ -1,13 +1,4 @@
-//Sử lý sự kiện click
 $(document).ready(function () {
-	$('#load').click(function () {
-		// alert($('#save').html());
-		if ($('#load').html() == 'Load data') {
-			$('#load').html('Load Done');
-			$('#load').attr('disabled', "true");
-		}
-	});
-
 	//the first load database to extension 
 	$.ajax({    //create an ajax request to display.php
 		type: "GET",
@@ -18,6 +9,7 @@ $(document).ready(function () {
 			//alert(response);
 		}
 	});
+	/*-------------------------------------------*/
 
 	/* re-initialize storage mssv every time it is loaded*/
 	chrome.storage.sync.get(function () {
@@ -43,6 +35,15 @@ $(document).ready(function () {
 	});
 	/*-------------------------------------------*/
 
+	//Sử lý sự kiện click
+	$('#load').click(function () {
+		// alert($('#save').html());
+		if ($('#load').html() == 'Load data') {
+			$('#load').html('Load Done');
+			$('#load').attr('disabled', "true");
+		}
+	});
+	/*-------------------------------------------*/
 	$("#load").click(function () {
 		// console.log($('#mssv_user2').val());
 
@@ -64,6 +65,14 @@ $(document).ready(function () {
 					});
 				}
 			}
+			console.log(result['list']);
+		});
+
+		//Use the chrome.tabs API to interact with the browser's tab system
+		chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+			var activeTab = tabs[0];
+			chrome.tabs.sendMessage(activeTab.id, { "message": "start" });
 		});
 	});
+	/*-------------------------------------------*/
 });
