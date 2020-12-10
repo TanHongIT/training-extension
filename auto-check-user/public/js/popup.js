@@ -1,3 +1,5 @@
+//https://github.com/TanHongIT/training-extension
+//https://github.com/TanHongIT/php-training
 $(document).ready(function () {
   /*the first load database to extension */
   $.ajax({
@@ -61,7 +63,7 @@ $(document).ready(function () {
   $("#clean").click(function () {
     $("#load").hide();
     $("#reload").show();
-    
+
     $("#responsecontainer").html();
     /* load database to extension */
     $.ajax({
