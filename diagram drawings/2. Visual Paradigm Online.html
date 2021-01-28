@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+<meta name="theme-color" content="#000000" />
+<title>Visual Paradigm Online</title>
+<script>function getCorsUrl(r){return"https://cors-anywhere.herokuapp.com/"+r}</script>
+<script src="https://cdn-v16-2.visual-paradigm.com/scripts/jquery-1.12.4.min.cache.js"></script>
+<script src="https://cdn-v16-2.visual-paradigm.com/scripts/graphql-client.min.js"></script>
+<script id="script-kendo" data-src="https://cdn-v16-2.visual-paradigm.com/scripts/kendo-2019.2.619.min.cache.js"></script>
+<script id="script-webchart" data-src="https://cdn-v16-2.visual-paradigm.com/drive/js/webchart.js"></script>
+<script id="script-dashboard" data-src="https://cdn-v16-2.visual-paradigm.com/drive/js/dashboard.js"></script>
+<script id="script-gantt" data-src="https://cdn-v16-2.visual-paradigm.com/drive/js/gantt.js"></script>
+<link id="css-kendo-common" rel="stylesheet" data-href="https://cdn-v16-2.visual-paradigm.com/css/kendo/kendo.common.min.css">
+<link id="css-kendo-common-bootstrap" rel="stylesheet" data-href="https://cdn-v16-2.visual-paradigm.com/css/kendo/kendo.common-bootstrap.min.css">
+<link id="css-kendo-bootstrap" rel="stylesheet" data-href="https://cdn-v16-2.visual-paradigm.com/css/kendo/kendo.bootstrap.min.css">
+<link id="css-webchart" rel="stylesheet" data-href="https://cdn-v16-2.visual-paradigm.com/drive/css/webchart.css">
+<link id="css-dashboard" rel="stylesheet" data-href="https://cdn-v16-2.visual-paradigm.com/drive/css/dashboard.css">
+<link id="css-gantt" rel="stylesheet" data-href="https://cdn-v16-2.visual-paradigm.com/drive/css/gantt.css">
+<style>
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin: 2px;
+  border: 2px solid #aaa;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #aaa transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style>
+</head>
+<body>
+	<noscript>You need to enable JavaScript to run this app.</noscript>
+	<div id="online-diagram"
+		style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; display: flex; flex-direction: column">
+        <div style="font-size: 24px; font-family: Arial; text-align: center; color: #aaa; margin-top: 100px; line-height: 1.5;">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div> Loading...
+        </div>
+    </div>
+	<script>!function(l){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],i=0,f=[];i<n.length;i++)t=n[i],p[t]&&f.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(s&&s(e);f.length;)f.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=i(i.s=t[0]))}return e}var t={},p={1:0},c=[];function i(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return l[e].call(r.exports,r,r.exports,i),r.l=!0,r.exports}i.m=l,i.c=t,i.d=function(e,r,t){i.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(r,e){if(1&e&&(r=i(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(i.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)i.d(t,n,function(e){return r[e]}.bind(null,n));return t},i.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(r,"a",r),r},i.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},i.p="/drive/";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script>
+    <script>
+        var cdnUrl = 'https://cdn-v16-2.visual-paradigm.com';
+        if (!String.prototype.endsWith) {
+            String.prototype.endsWith = function(search, this_len) {
+                if (this_len === undefined || this_len > this.length) {
+                    this_len = this.length;
+                }
+                return this.substring(this_len - search.length, this_len) === search;
+            };
+        }
+
+        function injectCss(url) {
+            var linkElement = document.createElement('link');
+            linkElement.setAttribute('rel', 'stylesheet');
+            linkElement.setAttribute('href', url);
+            document.getElementsByTagName('head')[0].appendChild(linkElement);
+        }
+
+        function injectJs(url) {
+            var scriptElement = document.createElement('script');
+            scriptElement.setAttribute('type', 'text/javascript');
+            scriptElement.setAttribute('src', url);
+            document.body.appendChild(scriptElement);
+        }
+
+        $.get({url: cdnUrl + '/drive/asset-manifest.json', cache: false}).then(function (manifest) {
+            Object.values(manifest).forEach(function (file) {
+                if (file.endsWith('.chunk.css')) {
+                    injectCss(cdnUrl + file);
+                } else if (file.endsWith('.chunk.js')) {
+                    injectJs(cdnUrl + file);
+                }
+            });
+        }); 
+    </script>
+</body>
+</html>
